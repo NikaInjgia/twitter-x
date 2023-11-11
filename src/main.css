@@ -1,0 +1,521 @@
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-end {
+  justify-content: end;
+}
+
+.justify-start {
+  justify-content: start;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto, Arial, sans-serif";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.left {
+  width: 18%;
+}
+.left .sticky1 {
+  position: sticky;
+  top: 0;
+}
+.left .sticky1 .postbox {
+  display: flex;
+  justify-content: center;
+}
+.left .sticky1 .postbox .post {
+  margin-top: 10px;
+  align-items: center;
+  background-color: rgb(29, 161, 242);
+  border-radius: 40px;
+  margin-right: 40px;
+  color: white;
+  padding: 15px 100px;
+}
+.left .sticky1 .postbox .post:hover {
+  cursor: pointer;
+  background-color: rgb(40, 182, 182);
+}
+.left .sticky1 .logoX {
+  cursor: pointer;
+  font-size: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.left .sticky1 .logoX i {
+  border-radius: 50%;
+  padding: 10px;
+}
+.left .sticky1 .logoX i:hover {
+  background-color: rgb(216, 216, 216);
+}
+
+.homebox .homehover {
+  display: flex;
+  align-items: center;
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 40px;
+}
+.homebox .homehover:hover {
+  cursor: pointer;
+  background-color: rgb(216, 216, 216);
+}
+.homebox .homehover .hometext {
+  padding: 10px;
+  padding-right: 30px;
+  font-size: 20px;
+}
+.homebox .homehover .home {
+  font-size: 25px;
+  padding: 10px;
+  padding-left: 15px;
+}
+
+.mid {
+  height: 3000px;
+  border: solid 1.5px rgb(245, 247, 248);
+  width: 38%;
+}
+.mid .head {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  border-bottom: solid 1.5px rgb(245, 247, 248);
+  display: flex;
+  justify-content: space-between;
+}
+.mid .head .following {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 95px;
+  padding-left: 95px;
+}
+.mid .head .following:hover {
+  cursor: pointer;
+  background-color: rgb(216, 216, 216);
+}
+.mid .head .foryou {
+  cursor: pointer;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 95px;
+  padding-left: 95px;
+}
+.mid .head .foryou:hover {
+  background-color: rgb(216, 216, 216);
+}
+.mid .head .setting {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.mid .head .setting i {
+  border-radius: 50%;
+  padding: 10px;
+}
+.mid .head .setting i:hover {
+  background-color: rgb(216, 216, 216);
+}
+.mid .what {
+  border-bottom: 1px solid rgb(245, 247, 248);
+}
+.mid .what .up {
+  display: flex;
+  align-items: center;
+}
+.mid .what .up .miniprofile {
+  padding: 15px;
+}
+.mid .what .up .miniprofile img {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.mid .what .up .whatis {
+  font-size: 20px;
+  color: rgb(216, 216, 216);
+}
+.mid .what .down {
+  display: flex;
+  justify-content: space-between;
+}
+.mid .what .down .L {
+  display: flex;
+}
+.mid .what .down .L #first {
+  margin-left: 40px;
+}
+.mid .what .down .L i {
+  cursor: pointer;
+  padding: 10px;
+  color: rgb(29, 161, 242);
+}
+.mid .what .down .R .post1 {
+  margin-bottom: 10px;
+  color: white;
+  border-radius: 50px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: 20px;
+  background-color: rgb(15, 193, 225);
+}
+.mid .posting {
+  border: solid 1px rgb(245, 247, 248);
+  padding-bottom: 8px;
+}
+.mid .posting img {
+  cursor: pointer;
+}
+.mid .posting .bottompost {
+  display: flex;
+  justify-content: space-around;
+}
+.mid .posting .bottompost .comments {
+  cursor: pointer;
+}
+.mid .posting .bottompost .comments:hover {
+  color: rgb(29, 161, 242);
+}
+.mid .posting .bottompost .comments:hover i {
+  background-color: rgb(183, 221, 246);
+  color: rgb(29, 161, 242);
+}
+.mid .posting .bottompost .arrows {
+  cursor: pointer;
+}
+.mid .posting .bottompost .arrows:hover {
+  color: green;
+}
+.mid .posting .bottompost .arrows:hover i {
+  background-color: rgb(210, 244, 219);
+  color: green;
+}
+.mid .posting .bottompost .heart {
+  cursor: pointer;
+}
+.mid .posting .bottompost .heart:hover {
+  color: rgb(163, 15, 64);
+}
+.mid .posting .bottompost .heart:hover i {
+  background-color: rgb(245, 190, 243);
+  color: rgb(163, 15, 64);
+}
+.mid .posting .bottompost .statistic {
+  cursor: pointer;
+}
+.mid .posting .bottompost .statistic:hover {
+  color: rgb(29, 161, 242);
+}
+.mid .posting .bottompost .statistic:hover i {
+  background-color: rgb(183, 221, 246);
+  color: rgb(29, 161, 242);
+}
+.mid .posting .bottompost .bookmark {
+  cursor: pointer;
+}
+.mid .posting .bottompost .bookmark:hover {
+  color: rgb(29, 161, 242);
+}
+.mid .posting .bottompost .bookmark:hover i {
+  background-color: rgb(183, 221, 246);
+  color: rgb(29, 161, 242);
+}
+.mid .posting .bottompost .download {
+  cursor: pointer;
+}
+.mid .posting .bottompost .download:hover {
+  color: rgb(29, 161, 242);
+}
+.mid .posting .bottompost .download:hover i {
+  background-color: rgb(183, 221, 246);
+  color: rgb(29, 161, 242);
+}
+.mid .posting .bottompost div {
+  color: grey;
+}
+.mid .posting .bottompost i {
+  color: grey;
+  padding: 7px;
+  border-radius: 50%;
+}
+.mid .posting .bottompost .download {
+  margin-left: -50px;
+  margin-right: -15px;
+}
+.mid .posting .images {
+  padding-left: 8px;
+  display: flex;
+  margin: 5px;
+}
+.mid .posting .images .foto1 {
+  border-top-right-radius: 30px;
+  border: 1px solid rgb(245, 247, 248);
+  margin-bottom: 1px;
+}
+.mid .posting .images .foto2 {
+  border-bottom-right-radius: 30px;
+  margin-top: -4px;
+}
+.mid .posting .images .foto3 {
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  margin-right: 1px;
+}
+.mid .posting .postheader {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.mid .posting .postheader .posttitle b:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.mid .posting .postheader .posttitle span {
+  color: #b2babf;
+}
+.mid .posting .postheader .rightpostheader {
+  margin-right: 5px;
+}
+.mid .posting .postheader .rightpostheader i {
+  border-radius: 50%;
+  font-size: 17px;
+  padding: 10px;
+}
+.mid .posting .postheader .rightpostheader i:hover {
+  cursor: pointer;
+  background-color: rgb(216, 216, 216);
+}
+.mid .posting .postheader .leftpostheader {
+  cursor: pointer;
+  display: flex;
+}
+.mid .posting .postheader .leftpostheader img {
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: rgb(107, 107, 207);
+  border-radius: 50%;
+}
+
+.right {
+  width: 25%;
+}
+.right .end {
+  margin: 15px 40px;
+  display: flex;
+}
+.right .end h5 {
+  margin-right: 7px;
+  color: #71808a;
+}
+.right .end h5:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.right .trends {
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: 25px;
+  background-color: #eff3f4;
+  border-radius: 15px;
+}
+.right .trends .show {
+  padding: 5px;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: rgb(29, 161, 242);
+}
+.right .trends .show:hover {
+  background-color: rgb(216, 216, 216);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.right .trends .trendbox {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: #eff3f4;
+}
+.right .trends .trendbox:hover {
+  background-color: rgb(216, 216, 216);
+}
+.right .trends .trendbox .trendright i {
+  padding: 7px 8px;
+  border-radius: 50%;
+}
+.right .trends .trendbox .trendright i:hover {
+  cursor: pointer;
+  color: rgb(29, 161, 242);
+  background-color: rgb(183, 221, 246);
+}
+.right .trends .trendbox .trendleft div {
+  color: #71808a;
+}
+.right .trends .trendbox .trendleft .middle {
+  color: black;
+}
+.right .trends h3 {
+  padding: 5px;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.right .subscribe {
+  margin-top: 10px;
+  margin-left: 25px;
+  background-color: #eff3f4;
+  border-radius: 15px;
+}
+.right .subscribe .show-more {
+  cursor: pointer;
+  padding: 5px;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: rgb(29, 161, 242);
+}
+.right .subscribe .show-more:hover {
+  background-color: rgb(216, 216, 216);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.right .subscribe .accounts {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  display: flex;
+}
+.right .subscribe .accounts .balancer {
+  display: flex;
+}
+.right .subscribe .accounts:hover {
+  background-color: rgb(216, 216, 216);
+}
+.right .subscribe .accounts .click-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.right .subscribe .accounts .click {
+  cursor: pointer;
+  margin-right: 10px;
+  border: solid 1px black;
+  color: white;
+  background-color: black;
+  height: 30px;
+  width: 80px;
+  border-radius: 30px;
+}
+.right .subscribe .accounts .fotka {
+  margin-top: 5px;
+  padding: 5px;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.right .subscribe .accounts .folow {
+  padding: 5px;
+}
+.right .subscribe .accounts .folow h4:hover {
+  text-decoration: underline;
+}
+.right .subscribe .accounts .folow h5 {
+  color: #71808a;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+.right .subscribe .accounts img {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.right .subscribe h3 {
+  padding: 5px;
+  padding-left: 15px;
+}
+.right .subscribe h4 {
+  padding: 5px;
+  padding-left: 15px;
+}
+.right .subscribe .sub {
+  cursor: pointer;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: solid 1px black;
+  color: white;
+  background-color: black;
+  padding: 7px 25px;
+  margin-left: 15px;
+  border-radius: 30px;
+}
+.right .searchbar {
+  position: sticky;
+  top: 0;
+  background-color: #eff3f4;
+  margin-top: 5px;
+  margin-left: 25px;
+  border: solid white;
+  border-radius: 50px;
+}
+.right .searchbar input {
+  background-color: #eff3f4;
+  padding: 15px;
+  border: 1px solid #eff3f4;
+  color: #71808a;
+  padding-right: 152px;
+  padding-left: 10px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+.right .searchbar input:focus {
+  outline: none;
+}
+.right .searchbar #search {
+  padding-left: 10px;
+  color: #71808a;
+}/*# sourceMappingURL=main.css.map */
